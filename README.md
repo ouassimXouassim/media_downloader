@@ -1,54 +1,102 @@
-# 🎵 Media Downloader CLI
+# Media Downloader CLI
 
-A powerful and interactive command-line Python script to download **videos and audios** from YouTube, Spotify, and other supported platforms (TikTok, Facebook, Instagram, etc.).
+A powerful, interactive command-line tool to download videos and audios from YouTube, Spotify, TikTok, Facebook, and other platforms. Built with Python and enriched with a colorful terminal interface.
 
-> ✅ Supports playlist downloads, automatic duplicate detection, folder selection, and a clean UI using [Rich].
+## Created by
+
+[ouassimXouassim](https://github.com/ouassimXouassim)
 
 ---
 
-## 📦 Features
+## Features
 
-- ✅ **Download YouTube videos** (high quality, audio-only, playlists)
-- ✅ **Download Spotify tracks and playlists** via `spotdl`
-- ✅ **Download from other platforms** supported by `yt-dlp` (Facebook, TikTok, Instagram, etc.)
-- ✅ Choose your **download folder**
-- ✅ Skip files if they already exist
-- ✅ Interactive, colorful CLI
+* 📥 Download high-quality video or audio from YouTube.
+* 🎵 Download Spotify tracks and playlists.
+* 🌐 Support for other platforms (TikTok, Facebook, etc.).
+* 🗂 Choose your download folder interactively.
+* 🧠 Automatically detects existing files to avoid duplicates.
+* 🎛 User-friendly command-line interface using `rich` library.
 
+---
 
-🛠 Requirements
-Make sure Python is installed, then run:
-pip install yt-dlp spotdl rich
-Debian/Ubuntu ===================================
-sudo apt install ffmpeg
-arch linux ======================================
-sudo pacman -S ffmpeg
-Usage: ==========================================
-python media_downloader.py
-=================================================
+## Requirements
+
+Make sure you have the following installed:
+
+* Python 3.9+
+* `yt-dlp` (for video/audio downloading)
+* `spotdl` (for Spotify support)
+* `rich` (for terminal UI)
+
+You can install required Python dependencies with:
+
+```bash
+pip install rich
+```
+
+And install external tools:
+
+```bash
+pip install yt-dlp spotdl
+```
+
+---
+
+## Usage
+
+### 1. Run the Script
+
+```bash
+python downloader.py
+```
+
+### 2. Choose a Source
+
+You'll be prompted with options like:
+
+* YouTube
+* Spotify
+* Other platforms (TikTok, Facebook...)
+
+### 3. Paste a URL
+
+Paste the video or playlist URL when asked.
+
+### 4. Select Output Folder
+
+Choose the folder where files will be saved.
+
+### 5. Duplicate Detection
+
+If a file with the same name and format already exists, it will be skipped.
+
+---
+
+## Example
+
+```bash
+$ python downloader.py
 🎵 Media Downloader CLI
 Choose a source to download from:
 1. YouTube
 2. Spotify
 3. Exit
 4. Other Platforms (TikTok, Facebook, etc.)
-=================================================
-🌐 Supported Platforms
-Thanks to yt-dlp, you can download from:
-YouTube
-Facebook
-Instagram
-TikTok
-SoundCloud
-Twitter/X
-Vimeo
-Dailymotion
-Reddit
-and hundreds more
-======================================================
-📁 Output Format
-Files are saved in:
-php-template
-<your-selected-folder>/<title>.<ext>
-Playlists will be saved in subfolders named after the playlist.
 
+> 1
+Enter YouTube URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Choose download type: Video or Audio
+...
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contributions
+
+Feel free to fork and improve this tool. Pull requests are welcome!
